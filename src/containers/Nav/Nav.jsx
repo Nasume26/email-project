@@ -1,4 +1,5 @@
 import "./Nav.scss"
+import { MdArrowDropDown } from 'react-icons/md'
 import logo from "../../data/images/logo.webp"
 import profile from "../../data/images/profile.jpeg"
 const Nav = (props) => {
@@ -11,7 +12,7 @@ const Nav = (props) => {
             </div>
             <div className="nav__profile">
                 <img src= {profile} alt = "profile picture" />
-                .
+                <MdArrowDropDown />
             </div>
         </div>
     )
