@@ -1,0 +1,14 @@
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        img {
+            height: 100px;
+        }
+    }
+}
