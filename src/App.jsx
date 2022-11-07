@@ -1,8 +1,10 @@
 import "./App.scss";
 import { useState, useEffect } from "react";
 import Nav from "./containers/Nav/Nav";
+import InboxPane from "./containers/InboxPane/InboxPane"
 
 function App() {
+  const [slectedTab, setSelectedTab] = useState("inbox")
   // Importance key 1: low, 2: medium, 3: high
   // Type key 1: personal, 2: work
   const dataArr= [
@@ -34,6 +36,9 @@ function App() {
   return (
     <div className="App">
       <Nav />
+      <div className="App__main">
+        <InboxPane slectedTab={slectedTab} setSelectedTab={setSelectedTab}/>
+      </div>
     </div>
   );
 }
