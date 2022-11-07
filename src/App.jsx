@@ -37,7 +37,7 @@ function App() {
     <div className="App">
       <Nav />
       <div className="App__main">
-        <InboxPane slectedTab={slectedTab} setSelectedTab={setSelectedTab}/>
+        <InboxPane slectedTab={slectedTab} setSelectedTab={setSelectedTab} dataArr= {dataArr}/>
       </div>
     </div>
   );
