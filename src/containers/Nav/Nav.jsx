@@ -6,7 +6,7 @@ const Nav = (props) => {
         <div className="nav">
             <div className="nav__logo">
                 <img src = {logo} alt = "logo" />
-                <h1>Relay.io</h1>
+                <h1>Relay<span className="nav__logo__io">.io</span></h1>
             </div>
             <div className="nav__profile">
                 TEST

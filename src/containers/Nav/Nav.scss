@@ -1,14 +1,25 @@
-
+@use "../../sass/vars.scss" as *;
 
 .nav {
     display: flex;
     justify-content: space-between;
+    border-bottom: 2px solid $logoSecondary;
+    border-radius: 5px;
 
     &__logo {
         display: flex;
         align-items: center;
+        font-family: $logoFont;
+        h1 {
+            color: $logoBlue;
+        }
+
         img {
             height: 100px;
+        }
+
+        &__io {
+            color: $logoSecondary;
         }
     }
 }
