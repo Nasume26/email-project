@@ -1,10 +1,13 @@
 import "./InboxPane.scss"
 
 const InboxPane = (props) => {
-
+    const {dataArr, selectedTab, setSelectedTab} = props;
 
     return (
-        <h1>Test</h1>
+        <div>
+            <h1>Inbox {dataArr.length}</h1> 
+            <h1>Trash</h1>
+        </div>
     )
 }
 
