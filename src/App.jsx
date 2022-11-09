@@ -2,6 +2,7 @@ import "./App.scss";
 import { useState, useEffect } from "react";
 import Nav from "./containers/Nav/Nav";
 import InboxPane from "./containers/InboxPane/InboxPane"
+import MiddlePane from "./containers/MiddlePane/MiddlePane";
 
 function App() {
   const [slectedTab, setSelectedTab] = useState("inbox")
@@ -81,6 +82,7 @@ function App() {
       <Nav />
       <div className="App__main">
         <InboxPane slectedTab={slectedTab} setSelectedTab={setSelectedTab} dataArr= {dataArr} tabSelectorInbox={tabSelectorInbox} tabSelectorTrash={tabSelectorTrash} inbox={inbox} trash={trash}/>
+        <MiddlePane />
       </div>
     </div>
   );
