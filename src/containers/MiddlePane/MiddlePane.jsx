@@ -23,7 +23,12 @@ const MiddlePane = (props) => {
 
             </div>
             <div className="middle-panel__emails">
-                {selectedEmail && <h1>{selectedEmail.email}</h1>}
+                {selectedEmail && 
+                <>
+                <h1>{selectedEmail.email}</h1>
+                <p>{selectedEmail.body}</p>
+                </>
+                }
             </div>
         </div>
     )

@@ -9,6 +9,7 @@ const EmailCard = (props) => {
     return (
         <div onClick={emailSelector} className="email-pane">
             <h1>{data.header}</h1>
+            <p>{data.email}</p>
         </div>
     )
 }

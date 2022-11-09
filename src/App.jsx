@@ -15,7 +15,7 @@ function App() {
       name: "Test Man",
       email: "test@test.com",
       header: "test",
-      body: "Test",
+      body: "Test test test test test test test test test test test",
       importance: 1,
       date: "11/21/2016",
       type: 1,
