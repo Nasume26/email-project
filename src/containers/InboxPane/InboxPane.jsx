@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import {AiOutlineMail} from "react-icons/ai"
 import "./InboxPane.scss"
 
 const InboxPane = (props) => {
@@ -9,7 +10,7 @@ const InboxPane = (props) => {
         <div className="inbox-pane">
             <div onClick={tabSelectorInbox} className={`inbox-pane__inbox ${inbox ? "inbox-pane__active":""}`}>
                 <div>
-                    <h1>Inbox</h1>
+                    <AiOutlineMail /> <span>Inbox</span>
                 </div>
                 <div>
                     <p>{dataArr.length}</p> 
