@@ -11,6 +11,7 @@ function App() {
     {
       name: "Test Man",
       email: "test@test.com",
+      header: "test",
       body: "Test",
       importance: 1,
       date: "11/21/2016",
@@ -21,6 +22,7 @@ function App() {
     {
       name: "Other Test",
       email: "test@test.com",
+      header: "test 2",
       body: "Test 2",
       importance: 3,
       date: "10/22/2017",
@@ -31,13 +33,49 @@ function App() {
 
   ]
 
+  const trashArr= [
+    {
+      name: "Test Man Trash",
+      email: "test@test.com",
+      header: "Test Trash",
+      body: "Test",
+      importance: 1,
+      date: "11/21/2016",
+      type: 1,
+      isRead: false,
+      isTrash: false
+    },    
+    {
+      name: "Other Test Trash",
+      email: "test@test.com",
+      header: "trashy test",
+      body: "Test 2",
+      importance: 3,
+      date: "10/22/2017",
+      type: 2,
+      isRead: false,
+      isTrash: false
+    }
+
+  ]
+
+  const tabSelectorInbox = () => {
+    setSelectedTab("inbox")
+    console.log(slectedTab)
+  }
+
+  const tabSelectorTrash = () => {
+    setSelectedTab("trash")
+    console.log(slectedTab)
+  }
+
 
 
   return (
     <div className="App">
       <Nav />
       <div className="App__main">
-        <InboxPane slectedTab={slectedTab} setSelectedTab={setSelectedTab} dataArr= {dataArr}/>
+        <InboxPane slectedTab={slectedTab} setSelectedTab={setSelectedTab} dataArr= {dataArr} tabSelectorInbox={tabSelectorInbox} tabSelectorTrash={tabSelectorTrash}/>
       </div>
     </div>
   );
