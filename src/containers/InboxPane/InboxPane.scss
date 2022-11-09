@@ -8,24 +8,31 @@
 
     &__inbox {
         margin-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 5px;
+        padding-right: 35px;
     }
 
     &__inbox, &__trash {
         background: rgba(128, 128, 128, 0.44);
         height: 10%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         border: 2px solid rgba(0, 0, 0, 0.212);
         border-radius: 4px;
+        font-family: $logoFont;
+        color: $logoBlue;
 
         &:hover {
             background: white;
         }
+    }
 
-  
-
+    &__trash {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 
