@@ -1,0 +1,18 @@
+@use "../../sass/vars" as *;
+
+.inbox-pane {
+    border-right: 2px solid $logoSecondary;
+    width: 25%;
+    height: 75vh;
+    margin-left: 5px;
+
+    &__inbox, &__trash {
+        background: grey;
+        height: 10%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+    }
+}
