@@ -1,7 +1,7 @@
 import { useState } from "react";
 import EmailCard from "../../components/EmailCard/EmailCard";
 import FilterPane from "../FilterPane/FilterPane";
-
+import "./MIddlePane.scss"
 
 const MiddlePane = (props) => {
     const {dataArr} = props;
@@ -14,15 +14,17 @@ const MiddlePane = (props) => {
     })
 
     return (
-        <div>
-            <div>
+        <div className="middle-panel">
+            <div className="middle-panel__tabs">
                 <FilterPane />
                 {renderData}
 
             
 
             </div>
-            {selectedEmail && <h1>{selectedEmail.email}</h1>}
+            <div className="middle-panel__emails">
+                {selectedEmail && <h1>{selectedEmail.email}</h1>}
+            </div>
         </div>
     )
 }

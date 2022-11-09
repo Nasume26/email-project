@@ -1,0 +1,10 @@
+@use "../../sass/vars" as *;
+
+.middle-panel {
+    display: flex;
+
+
+    &__tabs {
+        width: 500px;
+    }
+}
