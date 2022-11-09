@@ -24,7 +24,7 @@ function App() {
     },    
     {
       name: "Other Test",
-      email: "test@test.com",
+      email: "test@test2.com",
       header: "test 2",
       body: "Test 2",
       importance: 3,
@@ -39,7 +39,7 @@ function App() {
   const trashArr= [
     {
       name: "Test Man Trash",
-      email: "test@test.com",
+      email: "test@testrash.com",
       header: "Test Trash",
       body: "Test",
       importance: 1,
@@ -50,7 +50,7 @@ function App() {
     },    
     {
       name: "Other Test Trash",
-      email: "test@test.com",
+      email: "test@testtrashy.com",
       header: "trashy test",
       body: "Test 2",
       importance: 3,
@@ -82,7 +82,7 @@ function App() {
       <Nav />
       <div className="App__main">
         <InboxPane slectedTab={slectedTab} setSelectedTab={setSelectedTab} dataArr= {dataArr} tabSelectorInbox={tabSelectorInbox} tabSelectorTrash={tabSelectorTrash} inbox={inbox} trash={trash}/>
-        <MiddlePane />
+        <MiddlePane dataArr={dataArr}/>
       </div>
     </div>
   );
