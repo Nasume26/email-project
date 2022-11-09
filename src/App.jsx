@@ -32,7 +32,29 @@ function App() {
       type: 2,
       isRead: false,
       isTrash: false
-    }
+    },
+    {
+      name: "Other Test",
+      email: "test@test2.com",
+      header: "test 2",
+      body: "Test 2",
+      importance: 3,
+      date: "10/22/2017",
+      type: 2,
+      isRead: false,
+      isTrash: false
+    },
+    {
+      name: "Other Test",
+      email: "test@test2.com",
+      header: "test 2",
+      body: "Test 2",
+      importance: 3,
+      date: "10/22/2017",
+      type: 2,
+      isRead: false,
+      isTrash: false
+    },
 
   ]
 
