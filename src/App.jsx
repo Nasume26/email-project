@@ -5,6 +5,8 @@ import InboxPane from "./containers/InboxPane/InboxPane"
 
 function App() {
   const [slectedTab, setSelectedTab] = useState("inbox")
+  const [inbox, setInbox] = useState(true)
+  const [trash, setTrash] = useState(false)
   // Importance key 1: low, 2: medium, 3: high
   // Type key 1: personal, 2: work
   const dataArr= [
@@ -59,14 +61,17 @@ function App() {
 
   ]
 
-  const tabSelectorInbox = () => {
+  const tabSelectorInbox = (event) => {
     setSelectedTab("inbox")
-    console.log(slectedTab)
+    setInbox(true)
+    setTrash(false)
+    
   }
 
   const tabSelectorTrash = () => {
     setSelectedTab("trash")
-    console.log(slectedTab)
+    setInbox(false)
+    setTrash(true)
   }
 
 
@@ -75,7 +80,7 @@ function App() {
     <div className="App">
       <Nav />
       <div className="App__main">
-        <InboxPane slectedTab={slectedTab} setSelectedTab={setSelectedTab} dataArr= {dataArr} tabSelectorInbox={tabSelectorInbox} tabSelectorTrash={tabSelectorTrash}/>
+        <InboxPane slectedTab={slectedTab} setSelectedTab={setSelectedTab} dataArr= {dataArr} tabSelectorInbox={tabSelectorInbox} tabSelectorTrash={tabSelectorTrash} inbox={inbox} trash={trash}/>
       </div>
     </div>
   );
